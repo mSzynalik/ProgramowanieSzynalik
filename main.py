@@ -1,9 +1,7 @@
 from magazine.Product import Product
 
-
 def main():
-    product = Product("Piłeczka", 100, "Biedroneczka")
-    print(product)
-
+    produkt = Product("Piłeczka", 100, "Biedroneczka")
+    print(produkt)
 
 main()
