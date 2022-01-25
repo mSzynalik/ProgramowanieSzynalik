@@ -11,12 +11,12 @@ def detector(path):
     reg, _ = hg.detectMultiScale(
         photo, winStride=(4, 4), padding=(4, 4), scale=1.03)
 
-    osoby = 0
+    persons = 0
     for (x, y, w, h) in reg:
         cv2.rectangle(photo, (x, y), (x + w, y + h), (255, 120, 120), 2)
-        osoby += 1
+        persons += 1
 
-    print(f"Na zdjęciu jest {osoby} osób.")
+    print(f"{persons} persons found.")
 
     cv2.imshow("photo", photo)
     cv2.waitKey(0)
