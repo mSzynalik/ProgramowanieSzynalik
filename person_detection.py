@@ -16,7 +16,7 @@ def detector(path):
         cv2.rectangle(photo, (x, y), (x + w, y + h), (255, 120, 120), 2)
         persons += 1
 
-    print(f"{persons} persons found.")
+    print(f"{persons} persons detected.")
 
     cv2.imshow("photo", photo)
     cv2.waitKey(0)
